@@ -1,0 +1,6 @@
+{
+  "name": "Suneetha AI Automations",
+  "description": "Intelligent AI automation agency in India offering WhatsApp AI chatbots, Telegram AI assistants, Email Automation, AI Voice Calling Agents, and custom n8n workflows.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
