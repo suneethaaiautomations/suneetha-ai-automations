@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-midnight: #080B18;
+  --color-card-surface: #172036;
+  --color-aurora-violet: #8B5CF6;
+  --color-aurora-cyan: #22D3EE;
+  --color-ink-primary: #F8FAFC;
+  --color-ink-secondary: #CBD5E1;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #080B18;
+    color: #F8FAFC;
+    color-scheme: dark;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.aurora-glass {
+  background: linear-gradient(155deg, rgba(23, 32, 54, 0.78) 0%, rgba(15, 22, 41, 0.68) 100%);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.aurora-ambient-bg {
+  background-image:
+    radial-gradient(ellipse 65% 45% at 15% 10%, rgba(139, 92, 246, 0.14), transparent 70%),
+    radial-gradient(ellipse 55% 40% at 85% 15%, rgba(34, 211, 238, 0.11), transparent 70%),
+    radial-gradient(ellipse 50% 45% at 50% 90%, rgba(139, 92, 246, 0.08), transparent 70%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
