@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { FloatingEmail } from './components/FloatingEmail';
+import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 import { Footer } from './components/Footer';
 import { Navbar } from './components/Navbar';
 import { AboutPage } from './pages/AboutPage';
@@ -75,6 +76,7 @@ export default function App() {
 
       <Footer onNavigate={(page) => handleNavigate(page)} />
       <FloatingEmail />
+      <FloatingWhatsApp  />
     </div>
   );
 }
