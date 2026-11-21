@@ -6,6 +6,7 @@ export const BUSINESS_CONFIG = {
   location: 'India',
   currency: 'INR',
   email: 'suneethapammi64@gmail.com',
+  whatsappNumber :'919515436686',
 } as const;
 
 export function buildMailtoUrl(subject: string, body: string): string {
